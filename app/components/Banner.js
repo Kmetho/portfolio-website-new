@@ -1,0 +1,32 @@
+export default function Banner() {
+  const content = (
+    <>
+      🚂 Weronika Kmiec, creative technologist | web, 3D, visuals, and
+      sometimes photos | Contact:&nbsp;
+      <a href="mailto:wercche@gmail.com" className="underline hover:opacity-70">
+        e-mail
+      </a>
+      &nbsp;or DM me on&nbsp;
+      <a
+        href="https://www.instagram.com/wercche/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:opacity-70"
+      >
+        evil instagram
+      </a>
+    </>
+  );
+
+  return (
+    <div className="relative w-full overflow-hidden bg-[var(--text-color)] text-white uppercase font-display text-5xl">
+      <div
+        className="flex w-max animate-marquee hover:[animation-play-state:paused]"
+        aria-hidden="true"
+      >
+        <span className="mx-8 whitespace-nowrap">{content}</span>
+        <span className="mx-8 whitespace-nowrap">{content}</span>
+      </div>
+    </div>
+  );
+}
