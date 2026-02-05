@@ -13,7 +13,7 @@ export default function Banner() {
         rel="noopener noreferrer"
         className="underline hover:opacity-70"
       >
-        evil instagram
+        the evil app
       </a>
     </>
   );
