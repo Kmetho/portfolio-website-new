@@ -7,6 +7,10 @@ export default function P5Canvas() {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    const isTouch = window.matchMedia("(pointer: coarse)").matches;
+
+    if (isTouch) return;
+
     let p5Instance;
 
     (async () => {
@@ -19,12 +23,6 @@ export default function P5Canvas() {
         p5Instance.remove();
       }
     };
-
-    // let p5Instance = new p5(sketch, containerRef.current);
-
-    // return () => {
-    //   p5Instance.remove(); // clean breakup
-    // };
   }, []);
 
   return (
