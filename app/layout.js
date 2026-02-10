@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Weronika Kmiec creating for the world wide web",
+  title: "wercche – creative technologist making things on the internet",
   description:
-    "An autodidact developer unearthing the in-between of virtual and real.",
+    "Web developer & visual creator unearthing the in-between of virtual and real. I build interactive experiences, 3D experiments, and whatever else catches my curiosity. Self-taught and figuring it out as I go.",
   icons: {
     icon: "/smile.ico",
   },
@@ -12,14 +12,14 @@ export const metadata = {
     canonical: "https://wercche.xyz/",
   },
   openGraph: {
-    title: "wercche",
+    title: "wercche – creative technologist making things on the internet",
     description:
-      "An autodidact developer unearthing the in-between of virtual and real.",
+      "Web developer & visual creator unearthing the in-between of virtual and real. I build interactive experiences, 3D experiments, and whatever else catches my curiosity. Self-taught and figuring it out as I go.",
     type: "website",
     url: "https://wercche.xyz/",
     siteName: "wercche",
     locale: "en_US",
-    images: "/og-image.png",
+    images: "/og-image.jpg",
   },
   other: {
     "X-UA-Compatible": "IE=edge",
