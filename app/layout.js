@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Creative technologist unearthing the in-between of virtual and real. I build interactive web experiences, 3D experiments, and visual projects.",
   icons: {
-    icon: "/smile.ico",
+    icon: "/favicon.ico",
   },
   robots: "index, follow",
   alternates: {

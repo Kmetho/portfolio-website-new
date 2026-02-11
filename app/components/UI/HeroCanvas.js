@@ -1,25 +1,3 @@
-// "use client";
-
-// import { useEffect, useRef } from "react";
-// import p5 from "p5";
-// import Sketch from "../sketches/Sketch.js";
-
-// export default function Canvas() {
-//   const containerRef = useRef(null);
-
-//   useEffect(() => {
-//     const sketch = new p5(Sketch, containerRef.current);
-
-//     return () => {
-//       sketch.remove(); // 💀 kill it cleanly
-//     };
-//   }, []);
-
-//   return (
-//     <div ref={containerRef} className="fixed inset-0 z-0 pointer-events-none" />
-//   );
-// }
-
 "use client";
 
 import { useEffect, useRef } from "react";

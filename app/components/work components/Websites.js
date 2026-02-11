@@ -24,7 +24,7 @@ export default function Websites() {
         <div className="grid">
           <Image
             className="w-full h-full object-cover"
-            src="/images/paulina.png"
+            src="/placeholder.png"
             width={1000}
             height={500}
             alt=""
@@ -53,7 +53,7 @@ export default function Websites() {
         <div className="grid">
           <Image
             className="w-full h-full object-cover"
-            src="/images/paulina.png"
+            src="/placeholder.png"
             width={1000}
             height={500}
             alt=""
@@ -73,7 +73,7 @@ export default function Websites() {
         <div className="grid">
           <Image
             className="w-full h-full object-cover"
-            src="/images/paulina.png"
+            src="/placeholder.png"
             width={1000}
             height={500}
             alt=""
@@ -93,7 +93,7 @@ export default function Websites() {
         <div className="grid">
           <Image
             className="w-full h-full object-cover"
-            src="/images/paulina.png"
+            src="/placeholder.png"
             width={1000}
             height={600}
             alt=""
