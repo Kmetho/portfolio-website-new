@@ -59,7 +59,7 @@ export default function Slideshow({
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="relative aspect-[2/3] w-full">
+      <div className="relative aspect-2/3 w-full">
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={current}
