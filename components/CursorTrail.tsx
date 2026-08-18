@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 interface Point {
   x: number;
@@ -20,8 +21,11 @@ export default function CursorTrail({
   color,
 }: CursorTrailProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const disabled = usePathname()?.startsWith("/dev") ?? false;
 
   useEffect(() => {
+    if (disabled) return;
+
     const fine = window.matchMedia("(pointer: fine)").matches;
     const reduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -95,7 +99,9 @@ export default function CursorTrail({
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("resize", setup);
     };
-  }, [lifetime, lineWidth, color]);
+  }, [lifetime, lineWidth, color, disabled]);
+
+  if (disabled) return null;
 
   return (
     <canvas

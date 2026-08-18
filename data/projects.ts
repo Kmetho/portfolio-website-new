@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: "Crystal Synth Kit",
     description:
       "Click or tap crystals to play synthesized sounds. A musical instrument built in the browser.",
-    year: "2024, updated version: 2026",
+    year: "2025",
     tags: ["Three.js", "Web Audio API", "3D"],
     role: "fullstack, UX/UI, 3D modeling",
     thumbnail: "/thumbnails/synth-kit-thumb.jpg",
@@ -83,31 +83,31 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Kmetho/my-portfolio-website",
   },
 
-  {
-    slug: "reactive-shaders",
-    title: "Reactive Shaders",
-    description:
-      "A website that listens (microphone input) and reacts (shaders).",
-    year: "2026",
-    tags: ["GLSL", "Shaders", "Vite"],
-    role: "fullstack, UX/UI, 3D modeling",
-    thumbnail: "/thumbnails/reactive-shaders-thumb.jpg",
-    liveUrl: "https://wercche-shaders.vercel.app/",
-    githubUrl: "https://github.com/Kmetho/shaders",
-    wip: true,
-  },
+  // {
+  //   slug: "reactive-shaders",
+  //   title: "Reactive Shaders",
+  //   description:
+  //     "A website that listens (microphone input) and reacts (shaders).",
+  //   year: "2026",
+  //   tags: ["GLSL", "Shaders", "Vite"],
+  //   role: "fullstack, UX/UI, 3D modeling",
+  //   thumbnail: "/thumbnails/reactive-shaders-thumb.jpg",
+  //   liveUrl: "https://wercche-shaders.vercel.app/",
+  //   githubUrl: "https://github.com/Kmetho/shaders",
+  //   wip: true,
+  // },
 
-  {
-    slug: "paulina-rams-portfolio",
-    title: "Portfolio website for Paulina Rams",
-    description:
-      "An updated portfolio website for a graphic designer, Paulina Rams. Migrated to Astro for better performance and SEO, with the same design but improved user experience. First version built in 2023 as one of my first freelance projects, and now updated in 2026 with new features and a more modern tech stack.",
-    year: "2026",
-    tags: ["Astro", "WebGL", "TypeScript"],
-    role: "fullstack, working with a designer",
-    thumbnail: "/thumbnails/paulina-thumb.jpg",
-    // liveUrl: "https://paulinarams.com/",
-    githubUrl: "https://github.com/Kmetho/paulina-update",
-    wip: true,
-  },
+  // {
+  //   slug: "paulina-rams-portfolio",
+  //   title: "Portfolio website for Paulina Rams",
+  //   description:
+  //     "An updated portfolio website for a graphic designer, Paulina Rams. Migrated to Astro for better performance and SEO, with the same design but improved user experience. First version built in 2023 as one of my first freelance projects, and now updated in 2026 with new features and a more modern tech stack.",
+  //   year: "2026",
+  //   tags: ["Astro", "WebGL", "TypeScript"],
+  //   role: "fullstack, working with a designer",
+  //   thumbnail: "/thumbnails/paulina-thumb.jpg",
+  //   // liveUrl: "https://paulinarams.com/",
+  //   githubUrl: "https://github.com/Kmetho/paulina-update",
+  //   wip: true,
+  // },
 ];
