@@ -30,7 +30,7 @@ export const sections: Section[] = [
     id: "section0",
     bg: "bg1.png",
     models: [
-      { file: "cover-flower.glb", scale: 1, pos: [0, 0, 0], rot: [0, 0, 0] },
+      { file: "cover-flower.glb", scale: 1, pos: [1.5, 0, 0], rot: [0, 0, 0] },
     ],
     atmosphere: {
       fogColor: "#d5cde0",
