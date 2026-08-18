@@ -8,7 +8,7 @@ import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
-import WorkBackLink from "@/components/WorkBackLink";
+import Link from "next/link";
 
 const ASSET_BASE = "/experiments/synth-kit";
 
@@ -510,9 +510,14 @@ export default function SynthKitExperience() {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <WorkBackLink />
-      <canvas ref={canvasRef} className="fixed inset-0" />
+      <Link
+        href="/work"
+        className="fixed top-4 left-4 z-50 text-xs text-foreground font-bold uppercase tracking-widest transition-opacity duration-200 hover:opacity-60"
+      >
+        &larr; go back to work list
+      </Link>
 
+      <canvas ref={canvasRef} className="fixed inset-0" />
       <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 text-right pointer-events-none">
         <p className="text-foreground/60 text-xs sm:text-sm font-bold italic hidden sm:block">
           click a crystal or press 1–8

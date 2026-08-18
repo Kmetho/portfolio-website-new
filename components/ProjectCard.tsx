@@ -82,7 +82,6 @@ export default function ProjectCard({
                   {tag}
                 </span>
               ))}
-
             </div>
 
             <div className="flex flex-wrap items-center gap-6">
@@ -134,7 +133,7 @@ export default function ProjectCard({
               >
                 <motion.div
                   onClick={(e) => e.stopPropagation()}
-                  className="relative w-full max-w-md rounded-4xl border border-border bg-background p-8 text-center text-foreground"
+                  className="relative w-full max-w-md rounded-4xl border border-border bg-background p-8 text-foreground"
                   initial={{ scale: 0.85, opacity: 0, y: 12 }}
                   animate={{ scale: 1, opacity: 1, y: 0 }}
                   exit={{ scale: 0.9, opacity: 0, y: 12 }}
@@ -142,7 +141,7 @@ export default function ProjectCard({
                 >
                   <motion.div
                     aria-hidden
-                    className="mb-4 text-5xl"
+                    className="mb-4 text-5xl text-center"
                     animate={{ rotate: [-9, 9, -9] }}
                     transition={{
                       repeat: Infinity,
@@ -154,14 +153,11 @@ export default function ProjectCard({
                   </motion.div>
 
                   <h3 className="mb-3 text-3xl font-bold tracking-tight text-foreground">
-                    Caution!
+                    Work in progress!
                   </h3>
-                  <p className="text-lg font-bold text-foreground">
-                    This is work in progress!
-                  </p>
                   <p className="mt-2 mb-8 text-sm leading-relaxed text-foreground">
-                    Here's where it's at right now, but beware, as it might
-                    evolve…
+                    I tinker with this project in my spare time. Here's where
+                    it's at right now. Feel free to have a look.
                   </p>
 
                   <div className="flex flex-col justify-center gap-3 sm:flex-row">
@@ -169,7 +165,7 @@ export default function ProjectCard({
                       onClick={() => setWarnOpen(false)}
                       className="rounded-full border border-foreground px-5 py-2.5 text-sm font-bold uppercase tracking-widest text-foreground transition-opacity hover:opacity-60"
                     >
-                      ✕ I'm scared…
+                      ✕ I'll wait
                     </button>
                     <a
                       href={href}
@@ -178,7 +174,7 @@ export default function ProjectCard({
                       className="rounded-full px-5 py-2.5 text-sm font-bold uppercase tracking-widest transition-transform hover:scale-[1.03]"
                       style={{ background: "var(--signal)", color: "#040404" }}
                     >
-                      ✓ Enter anyway!
+                      ✓ Enter
                     </a>
                   </div>
                 </motion.div>
