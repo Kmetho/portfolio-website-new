@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 export default function ThemeToggle() {
   const [dark, setDark] = useState(false);
@@ -25,10 +24,12 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-      className="relative w-6 h-6 flex items-center justify-center text-foreground transition-opacity duration-200 hover:opacity-60"
+      aria-pressed={dark}
+      className="relative w-6 h-6 flex items-center justify-center rounded-full text-foreground transition-opacity duration-200 hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
     >
-      <motion.svg
+      <svg
         key={dark ? "moon" : "sun"}
+        className="icon-swap"
         xmlns="http://www.w3.org/2000/svg"
         width="14"
         height="14"
@@ -38,9 +39,7 @@ export default function ThemeToggle() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        initial={{ rotate: -45, opacity: 0, scale: 0.8 }}
-        animate={{ rotate: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 0.25 }}
+        aria-hidden="true"
       >
         {dark ? (
           <>
@@ -50,7 +49,7 @@ export default function ThemeToggle() {
         ) : (
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         )}
-      </motion.svg>
+      </svg>
     </button>
   );
 }
