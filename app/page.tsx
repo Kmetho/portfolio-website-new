@@ -1,6 +1,5 @@
 import Banner from "@/components/Banner";
 import HeroTypography from "@/components/HeroTypography";
-import ContactBlob from "@/components/ContactBlob";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         </a>
         <ThemeToggle />
       </div>
-      <ContactBlob />
     </main>
   );
 }

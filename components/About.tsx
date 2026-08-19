@@ -1,6 +1,5 @@
 "use client";
 
-import ContactBlob from "./ContactBlob";
 import FadeIn from "./motion/FadeIn";
 import PageTransition from "./motion/PageTransition";
 import StaggerChildren, { StaggerItem } from "./motion/StaggerChildren";
@@ -65,8 +64,6 @@ export default function About() {
             </div>
           </FadeIn>
         </section>
-
-        <ContactBlob />
       </div>
     </PageTransition>
   );

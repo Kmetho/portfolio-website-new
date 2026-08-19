@@ -213,7 +213,7 @@ export default function DevPage() {
                     width={project.image.width}
                     height={project.image.height}
                     sizes="(min-width: 640px) 224px, 100vw"
-                    quality={70}
+                    quality={75}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>

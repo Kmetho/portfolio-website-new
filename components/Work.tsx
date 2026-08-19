@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectCard from "@/components/ProjectCard";
-import ContactBlob from "@/components/ContactBlob";
 import FadeIn from "@/components/motion/FadeIn";
 import PageTransition from "@/components/motion/PageTransition";
 import { projects } from "@/data/projects";
@@ -30,7 +29,6 @@ export default function Work() {
         </div>
       </section>
 
-      <ContactBlob />
       <div className="h-20" />
     </PageTransition>
   );
